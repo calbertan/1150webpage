@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Unica+One&display=swap');
+/* Styles for Mobile Layout Go here. This should be a one-column layout. */
+body{
+	font-family: 'Rajdhani', sans-serif;
+	background-color: black;
+	color:white;
+}
+
+.header-div{
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul{
+    display:flex;
+	font-weight: 500;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+nav ul a{
+	color:white;
+	padding-left:1rem;
+}
+
+nav{
+	margin-top:1rem;
+}
+
+.featured article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#me{
+	max-width: 40%;
+}
+
+name, .name + p{
+	text-align: center;
+}
+
+.logo{
+	margin:auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo > a{
+	margin:auto;
+	width:25px;
+	height:25px;
+	margin:0.5rem;
+}
+
+.link:link{
+	color:white;
+}
+
+h1{
+	font-family: 'Unica One', cursive;
+}
+
+h2, h3 a{
+	text-decoration: none;
+	font-weight: 600;
+}
+
+
+.subtitle{
+	padding-top: 0.5rem;
+	font-weight:100;
+}
+
+img{
+	max-width:100%;
+}
+
+header ul{
+	list-style: none;
+}
+
+h1, .subtitle{
+	color: white;
+}
+
+article{
+	background-color: rgba(188, 143, 143, 0.1);
+	margin: 1rem;
+	margin-top:2rem;
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.articles article{
+	box-shadow: gray 10px 5px 10px;
+}
+
+h3 span{
+	color:rosybrown;
+}
+
+footer{
+	display:flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+/*This is a media query; it's saying that the following styles will not 
+take effect when the window is below 800px in width.*/
+@media screen and (min-width: 800px)
+
+{
+
+	/*Styles for desktop layout go here, including the three-column grid.*/
+	.header-div{
+		max-width: 1200px;
+		margin:auto;
+	}
+
+	.wrapper{
+		max-width: 1200px;
+		margin:auto;
+	}
+
+	.logo > a{
+		width:2%;
+	}
+	.articles .row1{
+		display: flex;
+		flex-direction:row-reverse;
+	}
+
+	.right{
+		width:65%;
+	}
+
+	.articles .row2{
+		display: flex;
+		flex-direction:row;
+	}
+
+	footer{
+		max-width: 1200px;
+		margin:auto;
+	}
+
+	.articles article:hover{
+		transform: scale(1.01, 1.01);
+	}
+	
+	.articles article{
+		transition: transform 0.5s;  
+	}
+	
+	
+}
